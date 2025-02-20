@@ -10,7 +10,7 @@ export default async function Page({ params }) {
     const { data, error } = await supabase
         .from('links')
         .select('original_url')
-        .eq('short_code', slug)   // ✅ Ganti 'slug' menjadi 'short_code'
+        .eq('short_code', slug)   
         .single();
 
 
